@@ -160,6 +160,9 @@
     .swiper-slide-active {
         margin: 0;
     }
+    .slaider-container .right-block .calendar-block .month .checkboxes{
+        top: 0;
+    }
 
 
 }
