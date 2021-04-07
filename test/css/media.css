@@ -160,13 +160,25 @@
     .swiper-slide-active {
         margin: 0;
     }
-    .slaider-container .right-block .calendar-block .month .checkboxes{
-        top: 0;
+    
+.main-title p {
+    width: 65%;
+}
+    .row{
+        --bs-gutter-x: 0.1rem;
     }
 
-
 }
-
+@media (max-width: 780px){
+    .section-1 .breadcrumb li:nth-child(3) {
+        display: none;
+    }
+    .description>.info-short>h1 {
+        font-size: 16px;
+        margin: 15px 0 17px;
+        width: 100%;
+    }
+}
 @media (max-width: 750px){
     .afisha-container .wrapper .popular-events .afisha-cards {
         grid-template-columns: repeat(4,1fr);
@@ -175,6 +187,14 @@
     }
     .min-slider-container .wrapper .min_swiper-container .swiper-wrapper .swiper-slide img {
         width: 119%;
+    }
+    .section-3 .title::after, .section-3 .title::before {
+        content: "";
+        width: 36%;
+        height: 1px;
+        position: absolute;
+        background-color: rgb(187, 185, 185);
+        top: 50%;
     }
     
 }
@@ -211,6 +231,15 @@
         text-align: center;
         align-items: center;
         
+    }
+    .section-1 .breadcrumb li {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 640px){
+    .main-title p {
+        font-size: 16px;
+        width: 50%;
     }
 }
 
@@ -293,9 +322,67 @@
     .min-slider-container .wrapper .min_swiper-container {
         padding:0;
     }
+
+
+    .description{
+        display: inline;
+    }
+    .section-1 .breadcrumb li {
+        margin-top: 20px;
+        margin-bottom: 1px;
+    }
+    .breadcrumb > li {
+        margin-right: 0;
+    }
+    .section-1{
+        text-align: center;
+    }
+    .description2{
+        text-align: start;
+    }
+    .description>.info-short>h1 {
+        text-align: center;
+    }
+    .description>.info-short {
+        text-align: start;
+    }
+    .main-title p {
+        font-size: 12px;
+        width: 50%;
+        text-align: start;
+        float: left;
+        margin-left: 5px;
+    }
+    .main-title a {
+        padding: 9px 10px;
+        font-size: 11px;
+        margin-top: 7px;
+    }
+    .section-2 .tabs{
+        margin-top: 117px;
+    }
+    table{
+        font-size: 12px;
+    }
+    .section-3 .title::after, .section-3 .title::before {
+        content: "";
+        width: 33%;
+    }
+    .afisha-container .wrapper .popular-events .afisha-cards .card .card-info1 {
+        padding-left: 80px;
+    }
 }
 
-
+@media (max-width: 420px){
+    .main-title p {
+        font-size: 10px;
+        width: 59%;
+    }
+    .section-3 .title::after, .section-3 .title::before {
+        content: "";
+        width: 28%;
+    }
+}
 @media (max-width: 350px){
     header .top-header .wrapper .logo a img {
         width: 150px;
