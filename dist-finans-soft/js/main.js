@@ -60,5 +60,22 @@ $(function () {
     $('.rightside-close').on('click', function(){
         $('.menu__list').removeClass('menu-active');
     });
-})
+});
 
+new Swiper('.diplome__inner',{
+  slidesPerView: 1,
+  autoplay: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+    }
+  },
+});
