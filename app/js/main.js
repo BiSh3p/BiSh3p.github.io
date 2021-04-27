@@ -19,10 +19,8 @@ $(document).ready(function(){
     });
     $('.tabs__triggers-item:first').click();
 });
-$('.link').hover(function(){
+$('.menu__list-link').hover(function(){
 	$('.header').addClass('sticky');
-}, function() {
-	$('.header').removeClass('sticky');
 });
 $('.menu__sab-list').hover(function(){
 	$('.header').addClass('sticky');
@@ -88,4 +86,36 @@ new Swiper('.diplome__inner',{
       slidesPerView: 4,
     }
   },
+});
+new Swiper('.team-slide',{
+  slidesPerView: 1,
+  autoplay: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2'
+},
+});
+new Swiper('.image-slaider',{
+  slidesPerView: 1,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+   
+    700: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 640px
+    1022: {
+      slidesPerView: 3,
+    }
+  },
+});
+
+var mixer = mixitup('.gallery__inner', {
+  load: {
+      filter: '.new'
+  }
 });

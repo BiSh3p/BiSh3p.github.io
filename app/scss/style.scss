@@ -174,6 +174,7 @@ body{
         }
     }
 }
+
 .foot-bottom{
     align-items: center;
     background-color: #f8f8f8;
@@ -259,7 +260,7 @@ body{
     position: absolute;
     top: 20px;left: 0;
     width: 490px;
-    height: 80%;
+    height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -276,7 +277,7 @@ body{
     position: absolute;
     top: 20px;left: 0;
     width: 490px;
-    height: 80%;
+    height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -292,7 +293,7 @@ body{
     position: absolute;
     top: 20px;left: 0;
     width: 490px;
-    height: 80%;
+    height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -308,7 +309,7 @@ body{
     position: absolute;
     top: 20px;left: 0;
     width: 490px;
-    height: 80%;
+    height: 240px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -320,11 +321,77 @@ body{
     background-image: url(../images/bg/4.jpg);
     content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
 }
+.class5:nth-child(1):hover::before{
+    background-image: url(../images/bg/4.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+.class6:nth-child(1):hover::before{
+    background-image: url(../images/bg/1.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+.class7:nth-child(1):hover::before{
+    background-image: url(../images/bg/3.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+.class8:nth-child(1):hover::before{
+    background-image: url(../images/bg/4.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+.class9:nth-child(1):hover::before{
+    background-image: url(../images/bg/1.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+.class10:nth-child(1):hover::before{
+    background-image: url(../images/bg/2.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+.class11:nth-child(1):hover::before{
+    background-image: url(../images/bg/4.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+.class12:nth-child(1):hover::before{
+    background-image: url(../images/bg/1.jpg);
+    content: 'В настоящее время у компании 14 клиентов – среди которых 8 банков Кыргызской Республики и 1 зарубежный банк.';
+}
+
+
+
+.class5:nth-child(1):hover::before,
+.class6:nth-child(1):hover::before,
+.class7:nth-child(1):hover::before,
+.class8:nth-child(1):hover::before,
+.class9:nth-child(1):hover::before,
+.class10:nth-child(1):hover::before,
+.class11:nth-child(1):hover::before,
+.class12:nth-child(1):hover::before
+{
+    margin-left: 10px;
+    position: absolute;
+    top: 20px;left: 0;
+    width: 490px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    font-size: 20px;
+}
+
 .menu__sub-new{
     &:hover{
         color: #cecece;
     }
 }
+
+
 .menu{
     margin-left: auto;
     &__list{
@@ -372,7 +439,7 @@ body{
                 content: '';
                 width: 1px;
                 height: 70%;
-                top: 30px;
+                top: 34px;
                 left: 535px;
                 background-color: #cecece;
             }
@@ -413,13 +480,13 @@ body{
             background-size: cover;
             background-position: center;
             width: 490px;
-            height: 80%;
+            height: 240px;
         }
         &::after{
             position: absolute;
             content: '';
             width: 300%;
-            height: 257px;
+            height: 307px;
             background-color: #fff;
             top: 0;
             left: -100%;
@@ -832,22 +899,29 @@ body{
 }
 .faq-section{
     padding: 50px 0;
-    &__title{
-        text-align: center;
-        margin-bottom: 20px;
-        color: #646262;
-    }
-    &__text{
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 13px;
-        color: #525050;
-    }
+
+}
+.faq-bg__item{
+    max-width: 466px;
+}
+.faq__title{
+    text-align: center;
+    padding: 30px 0 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #585858;
+}
+.faq-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 60px;
 }
 .faq {
-    max-width: 800px;
-    margin: 20px auto;
     font-weight: 600;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .faq-item {
@@ -858,16 +932,56 @@ body{
 .faq-item:nth-child(1){
     border-top: 2px solid #b9b9b9;
 }
-
+.faq1,
+.faq2,
+.faq3,
+.faq4,
+.faq5,
+.faq6,
+.faq7{
+    &::before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: 9px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.faq1::before{
+    background-image: url(../images/icon/1.svg);
+}
+.faq2::before{
+    background-image: url(../images/icon/2.svg);
+}
+.faq3::before{
+    background-image: url(../images/icon/3.svg);
+}
+.faq4::before{
+    background-image: url(../images/icon/4.svg);
+}
+.faq5::before{
+    background-image: url(../images/icon/5.svg);
+}
+.faq6::before{
+    background-image: url(../images/icon/6.svg);
+}
+.faq7::before{
+    background-image: url(../images/icon/1.svg);
+}
 .faq-title {
     display: block;
-    padding: 10px 15px;
+    padding: 15px 15px;
     position: relative;
-
+    font-size: 18px;
     color: rgb(153, 151, 151);
     cursor: pointer;
-
+    padding-left: 50px;
     transition: .5s;
+    
 }
 
 .faq-title:after {
@@ -887,6 +1001,7 @@ body{
 
 .faq-title:hover {
     color: rgb(0, 0, 0);
+    
 }
 
 .faq-input {
@@ -1535,9 +1650,10 @@ body{
         &-text{
             padding: 0 20px 40px;
             font-size: 12px;
-            color: #b9b9b9;
+            color: #b9b9b8;
         }
     }
+    
 }
 .diplome{
     padding: 80px 0;
@@ -1555,6 +1671,7 @@ body{
     }
     &__img{
         margin: 0 5px;
+        border: 1px solid #929696;
     }
 }
 .tecno-info{
@@ -1619,6 +1736,7 @@ body{
         }
     }
 }
+
 .top-slider__item{
     margin-right: 15px;
 }
@@ -1628,10 +1746,417 @@ body{
     border-radius: 50%;
     margin-left: 5px;
 }
+.comment{
+    background-color: #3a3a3a;
+    &-img{
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+    color: #8f8f8f;
+}
+.slider-box .swiper-button-next::after, .swiper-button-prev::after{
+    color: #8f8f8f;
+}
+.slide__content-text2{
+    max-width: 300px;
+}
+.comment-form{
+    padding: 0 0 40px;
+    &__title{
+        color: #fff;
+        font-weight: 700;
+        font-size: 34px;
+        @extend %title-font;
+        margin-bottom: 20px;
+    }
+    &__name{
+        border: 1px solid #06da70;
+        background-color: transparent;
+        padding: 12px 15px;
+        width: 100%;
+        max-width: 400px;
+        margin-right: 30px;
+        transition: all .5s;
+        &:hover{
+            box-shadow: 0 0 6px #06da70;
+            &::placeholder{
+                color: #06da70;
+            }
+        }
+    }
+    
+    &__area{
+        resize: none;
+        width: 100%;
+        max-width: 834px;
+        height: 120px;
+        margin-top: 25px;
+        background-color: transparent;
+        border: 1px solid #06da70;
+        padding: 8px 15px;
+        &:hover{
+            box-shadow: 0 0 6px #06da70;
+        &::placeholder{
+            color: #06da70;
+        }
+        }
+    }
+    &__btn{
+        display: block;
+        background-color: #06da70;
+        color: white;
+        text-align: center;
+        max-width: 834px;
+        padding: 15px 0;
+        margin-top: 25px;
+        transition: all .5s;
+        &:hover{
+            background-color: #066837;
+        }
+    }
+}
+
+.bg-slide {
+    min-height: 645px;
+  }
+  .bg-slide .servic__heading {
+    text-align: center;
+    padding: 60px 0 50px;
+  }
+  .bg-slide .servic__heading .servic__heading-text2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+  .bg-slide .slide__content {
+    background-color: #fff;
+    width: 320px;
+    height: 355px;
+  }
+  .bg-slide .slide__content img {
+    height: 100px;
+    padding-top: 20px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  .bg-slide .slide__content .slide__content-inner {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 0px;
+  }
+  .bg-slide .slide__content .slide__content-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #929696;
+  }
+  .bg-slide .slide__content .slide__content-text2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #929696;
+    padding-top: 30px;
+    width: 500px;
+  }
+  .bg-slide .slider {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.one-card{
+    background-color: #f3f3f3;
+    padding: 40px 0;
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        color: #959596;
+        margin-bottom: 20px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 375px;
+        color: #000;
+        position: relative;
+        background-color: #fff;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin: 5px;
+        &:hover{
+            .one-card__back{
+                opacity: 1;
+            }
+            .one-card__back-text{
+               top: 30px;
+
+            }
+            .one-card__back-title{
+                top: 5px;
+             }
+             .one-card__back-link{
+                bottom: 20px;
+             }
+        }
+    }
+    &__back-link{
+        display: block;
+    }
+
+    img{
+        width: 85px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__front{
+        text-align: center;
+        align-items: center;
+        padding: 40px 5px;  
+    }
+    &__back{
+        position: absolute;
+        padding: 20px 30px;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+        color: #fff;
+        background-color: #1476f2;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    &__back-title{
+        top: 500px;
+        left: 0;
+        position: absolute;
+        padding: 20px 30px;
+        transition: all .5s;
+    }
+    &__back-text{
+        top: 500px;
+        left: 0;
+        position: absolute;
+        padding: 20px 30px;
+        transition: all .5s;
+    }
+    &__back-link{
+        position: absolute;
+        bottom: -220px; 
+        left: 0;
+        transition: .5s;
+        margin-left: 30px;
+    }
+    
+}
+.team-info{
+    padding: 40px 0;
+    background-color: #fdfdfd;
+    &__inner{
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #cecece;
+    }
+    &__img{
+        background-image: url(../images/slide1.jpg);
+        width: 290px;
+        height: 100px
+        background-size cover;
+        background-position: center;
+    }
+    &__info{
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 25px;
+    }
+    &__title{
+        margin-bottom: 20px;
+        color: #6e6e6e;
+        font-weight: 700;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100px;
+            border-radius: 1px;
+            background-color: #da0606;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+    &__text{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+.product-info{
+    padding: 30px 0;
+    &__title{
+        color: #646262;
+        @extend %title-font;
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__item{
+        display: flex;
+    }
+    &__img{
+        img{
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+    &__items{
+        padding-left: 20px;
+    }
+    &__title-text{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #959596;
+        padding-bottom: 10px;
+    }
+    &__text{
+        max-width: 450px;
+        font-size: 22px;
+
+    }
+    &__bottom-title{
+        font-size: 25px;
+        margin-top: 30px;
+        font-weight: 700;
+        color: #6e6e6e;
+        margin-bottom: 20px;
+    }
+    &__bottom-img{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        &__box{
+            margin-right: 20px;
+        }
+    }
+}
+
+.gallery{
+    padding: 40px 0 0;
+    &__buttons{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        border: none;
+        cursor: pointer;
+        padding: 5px 15px;
+        border-radius: 16px;
+        transition: .5s;
+        margin-bottom: 3px;
+        &:hover{
+            background-color: #535353;
+            color: white;
+        }
+    }
+    .mixitup-control-active{
+        background-color: #535353;
+        color: white;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    &__item{
+        position: relative;
+        margin: 15px 5px;
+    }
+    &__play{
+        position: absolute;
+        align-items: center;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &__item-img{
+        width: 350px;
+        height: 220px;
+        object-fit: cover;
+    }
+    &__text{
+        max-width: 350px;
+        color: #000;
+        padding: 5px;
+    }
+}
+#1,
+#2,
+#3,
+#4,
+#5{
+    transition: all 1s;
+}
+.team-form{
+    background-color: #fdfdfd;
+    padding: 30px 0;
+    &__inner{
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title{
+        color: #8f8f8f;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        border: 1px solid #a1a1a1;
+        padding: 8px 10px;
+        display: inline-block;
+        width: 200px;
+        color: #6e6e6e;
+        padding-right: 30px;
+        transition: all .5s;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '->';
+            right: 19px;
+            transition: all .5s;
+        }
+        &:hover{
+            color: #da0606;
+            &::after{
+                color: #da0606;
+                right: 10px;
+            }
+        }
+    }
+}
 @media(max-width: 1150px){
     
     .footer__content-navigation{
         margin-left: 25px;
+    }
+}
+@media(max-width: 1110px){
+    .gallery__items{
+        justify-content: center;
     }
 }
 @media(max-width: 1010px){
@@ -1666,11 +2191,18 @@ body{
     .footer__content{
         display: block;
     }
+    .faq-inner{
+        justify-content: center;
+    }
+    
 }
 @media(max-width: 900px){
     .rightside-menu,
     .rightside-close{
         display: block;
+    }
+    .menu__list{
+        overflow: auto;
     }
     .menu__sab-list::before {
         display: none;
@@ -1750,6 +2282,9 @@ body{
     .menu__sab-list::after{
         display: none;
     }
+    .comment-form__name{
+        margin-right: 5px;
+    }
 }
 @media(max-width: 870px){
     
@@ -1787,6 +2322,10 @@ body{
     .tecno-info__inner {
         max-width: 500px;
     }       
+    .comment-form__name{
+        max-width: 850px;
+        margin-top: 10px;
+    }
 }
 @media(max-width: 811px){
     .vacancy-bottom__input{
@@ -1822,6 +2361,22 @@ body{
     .foot-top__form{
         margin: 20px auto 0;
         text-align: center;
+    }
+    .team-info__inner{
+        display: block;
+        text-align: center;
+        border: none;
+    }
+    .team-info__img{
+        height: 400px;
+        margin: 0 auto;
+    }
+    .team-info__info{
+        margin: 0 auto;
+    }
+    .team-info__title::after {
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 @media(max-width: 750px){
@@ -2164,6 +2719,9 @@ body{
     }
     .top__slider-text{
         font-size: 14px;
+    }
+    .faq-inner{
+        padding: 0 20px;
     }
 }
 

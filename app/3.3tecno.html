@@ -7,22 +7,21 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.min.css">  
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
 <body>
 
   <div class="wrapper">
-
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="1index.html">
+          <a class="logo" href="index.html">
             <img src="images/logo.png" alt="logo">
           </a>
-          <a class="logo2" href="1index.html">
+          <a class="logo2" href="index.html">
             <img src="images/logo-footer.png" alt="logo">
           </a>
 
@@ -31,7 +30,20 @@
               <button class="rightside-close">
                 <img src="images/close.png" alt="">
               </button>
-              <li class="menu__list-item"><a class="menu__list-link" href="2product.html">Продукты</a></li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="2product.html">Продукты</a>
+                <nav class="menu__sab-list">
+                  <ul class="menu__sub-new">
+                    <li class="menu__list-sab-item">
+                      <a href="2product.html" class="menu__list-sab-link class2">Проекты</a>
+                    </li>
+                    <li class="menu__list-sab-item">
+                      <a href="2.1product.html" class="menu__list-sab-link class3">Видео</a>
+                    </li>
+              </li>
+            </ul>
+            <nav>
+              </li>
               <li class="menu__list-item">
                 <a class="menu__list-link link" href="3.1team.html">Команда</a>
                 <nav class="menu__sab-list">
@@ -48,91 +60,157 @@
                     <li class="menu__list-sab-item">
                       <a href="3.4career.html" class="menu__list-sab-link class4">Карьера</a>
                     </li>
+                    <li class="menu__list-sab-item">
+                      <a href="3.4career.html" class="menu__list-sab-link class4">Начало карьеры</a>
+                    </li>
                   </ul>
                   <nav>
               </li>
-              <li class="menu__list-item"><a class="menu__list-link" href="4client.html">Наши клиенты</a></li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="4client.html">Наши клиенты</a>
+                <nav class="menu__sab-list">
+                  <ul class="menu__sub-new">
+                    <li class="menu__list-sab-item">
+                      <a href="4client.html#1" class="menu__list-sab-link class2">главная</a>
+                    </li>
+                    <li class="menu__list-sab-item">
+                      <a href="4client.html#2" class="menu__list-sab-link class3">клиенты</a>
+                    </li>
+                    <li class="menu__list-sab-item">
+                      <a href="4client.html#3" class="class1 menu__list-sab-link ">проекты партнеров</a>
+                    </li>
+                    <li class="menu__list-sab-item">
+                      <a href="4client.html#4" class="menu__list-sab-link class4">почему мы?</a>
+                    </li>
+                    <li class="menu__list-sab-item">
+                      <a href="4client.html#5" class="menu__list-sab-link class4">отзывы</a>
+                    </li>
+                  </ul>
+                  <nav>
+              </li>
               <!--  <li class="menu__list-item"><a class="menu__list-link" href="5contact.html">Контакты</a></li> -->
               <li class="menu__list-sab-item">
                 <a href="#" class="header__icon first"><img src="images/en-icon.png" alt=""></a>
                 <a href="#" class="header__icon first"><img src="images/ru-icon.png" alt=""></a>
               </li>
-            </ul>
-          </nav>
+              </ul>
+            </nav>
 
-          <a href="#" class="header__icon second"><img src="images/en-icon.png" alt=""></a>
-          <a href="#" class="header__icon second" style="margin-left: 15px;"><img src="images/ru-icon.png" alt=""></a>
-          <a href="#" class="header__btn">Личный кабинет</a>
-          <button class="rightside-menu">
-            <img src="images/menu.png" alt="">
-          </button>
+            <a href="#" class="header__icon second"><img src="images/en-icon.png" alt=""></a>
+            <a href="#" class="header__icon second" style="margin-left: 15px;"><img src="images/ru-icon.png" alt=""></a>
+            <a href="#" class="header__btn">Личный кабинет</a>
+            <button class="rightside-menu">
+              <img src="images/menu.png" alt="">
+            </button>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <section class="banner">
+      <section class="tecno-top">
         <div class="container">
-          <h1 class="banner__title">Компания "Finance Soft"</h1>
-          <p class="banner__text">Finance Soft является ведущим разработчиком банковского программного обеспечения</p>
-          <a class="banner__btn" href="#">О компании</a>
+          <h3 class="tecno-top__title">Наши Технологии</h3>
+          <p class="tecno-top__text">Разработка программных решений с последними технологиями</p>
         </div>
       </section>
-      <section class="servise" style="position: relative; background-image: url(images/bg/bg-offers.webp);">
-        <div id="particles-js"></div>
+      <section class="tecno-collection">
         <div class="container">
-          <h2 class="servise__title">Наши основные услуги</h2>
-          <div class="card__items" style="position: relative;">
-            <a class="card__item" href="#">
-              <div class="card__item-inner">
-                <div class="card__item-img">
-                  <img src="images/card-1.png" alt="">
-                </div>
-                <div class="card__content">
-                  <h4 class="card__item-title">Бизнес</h4>
-                  <p class="card__item-text">Компания "Finance Soft" является ведущим разработчиком банковского
-                    программного обеспечения в Кыргызстане
-                  </p>
-                  <div class="card__item-btn">Подробнее</div>
-                </div>
+          <h3 class="tecno-collection__title">Компания "Finance Soft"</h3>
+          <p class="tecno-collection__text">Finance Soft является ведущим разработчиком банковского программного
+            обеспечения</p>
+          <div class="tecno-collection__inner">
+            <a class="tecno-collection__item" href="#">
+              <div class="tecno-collection__item-front">
+                <img class="tecno-collection__item-img" src="images/security.png" alt="">
+                <p class="tecno-collection__item-title">4К-АнтиТеррорист</p>
+              </div>
+              <div class="tecno-collection__item-back">
+                <p class="tecno-collection__item-text">Система позволяет в масштабе реального времени отслеживать
+                  сомнительные операции клиентов банка</p>
+                <p class="tecno-collection__item-bt" href="#">Читать больше</p>
               </div>
             </a>
-            <a class="card__item" href="#">
-              <div class="card__item-inner">
-                <div class="card__item-img">
-                  <img src="images/card-1.png" alt="">
-                </div>
-                <div class="card__content">
-                  <h4 class="card__item-title">Банк</h4>
-                  <p class="card__item-text">Компания "Finance Soft" является ведущим разработчиком банковского
-                    программного обеспечения в Кыргызстане
-                  </p>
-                  <div class="card__item-btn">Подробнее</div>
-                </div>
+            <a class="tecno-collection__item" href="#">
+              <div class="tecno-collection__item-front">
+                <img class="tecno-collection__item-img" src="images/card-2.png" alt="">
+                <p class="tecno-collection__item-title">4К-АнтиТеррорист</p>
+              </div>
+              <div class="tecno-collection__item-back">
+                <p class="tecno-collection__item-text">Система позволяет в масштабе реального времени отслеживать
+                  сомнительные операции клиентов банка</p>
+                <p class="tecno-collection__item-bt" href="#">Читать больше</p>
               </div>
             </a>
-            <a class="card__item" href="#">
-              <div class="card__item-inner">
-                <div class="card__item-img">
-                  <img src="images/card-1.png" alt="">
-                </div>
-                <div class="card__content">
-                  <h4 class="card__item-title">Организаций</h4>
-                  <p class="card__item-text">Компания "Finance Soft" является ведущим разработчиком банковского
-                    программного обеспечения в Кыргызстане
-                  </p>
-                  <div class="card__item-btn">Подробнее</div>
-                </div>
+            <a class="tecno-collection__item" href="#">
+              <div class="tecno-collection__item-front">
+                <img class="tecno-collection__item-img" src="images/card-3.png" alt="">
+                <p class="tecno-collection__item-title">4К-АнтиТеррорист</p>
+              </div>
+              <div class="tecno-collection__item-back">
+                <p class="tecno-collection__item-text">Система позволяет в масштабе реального времени отслеживать
+                  сомнительные операции клиентов банка</p>
+                <p class="tecno-collection__item-bt" href="#">Читать больше</p>
+              </div>
+            </a>
+            <a class="tecno-collection__item" href="#">
+              <div class="tecno-collection__item-front">
+                <img class="tecno-collection__item-img" src="images/security.png" alt="">
+                <p class="tecno-collection__item-title">4К-АнтиТеррорист</p>
+              </div>
+              <div class="tecno-collection__item-back">
+                <p class="tecno-collection__item-text">Система позволяет в масштабе реального времени отслеживать
+                  сомнительные операции клиентов банка</p>
+                <p class="tecno-collection__item-bt" href="#">Читать больше</p>
+              </div>
+            </a>
+            <a class="tecno-collection__item" href="#">
+              <div class="tecno-collection__item-front">
+                <img class="tecno-collection__item-img" src="images/card-2.png" alt="">
+                <p class="tecno-collection__item-title">4К-АнтиТеррорист</p>
+              </div>
+              <div class="tecno-collection__item-back">
+                <p class="tecno-collection__item-text">Система позволяет в масштабе реального времени отслеживать
+                  сомнительные операции клиентов банка</p>
+                <p class="tecno-collection__item-bt" href="#">Читать больше</p>
               </div>
             </a>
           </div>
         </div>
       </section>
-      <div class="section video">
-        <a class="video__img" data-fancybox href="https://youtu.be/ii_kLoB_2_A">
-          <img src="images/play-button.svg" alt="">
-        </a>
-      </div>
+
+      <section class="tecno-info">
+        <div class="container">
+          <h3 class="tecno-info__title">Мы исользуем</h3>
+          <div class="tecno-info__inner">
+            <div class="tecno-info__item">
+              <p class="tecno-info__text">НА ФРОНТЕ</p>
+              <img src="images/tecno/1.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/2.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/3.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/4.png" alt="" class="tecno-info__img">
+            </div>
+            <div class="tecno-info__item">
+              <p class="tecno-info__text">ФРЕЙМВОРКИ</p>
+              <img src="images/tecno/5.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/6.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/7.png" alt="" class="tecno-info__img">
+            </div>
+            <div class="tecno-info__item">
+              <p class="tecno-info__text">НА БЕКЕ</p>
+              <img src="images/tecno/8.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/9.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/10.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/11.png" alt="" class="tecno-info__img">
+            </div>
+            <div class="tecno-info__item">
+              <p class="tecno-info__text">БАЗА ДАННЫЧ</p>
+              <img src="images/tecno/12.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/13.png" alt="" class="tecno-info__img">
+              <img src="images/tecno/14.png" alt="" class="tecno-info__img">
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="client">
         <div class="container">
@@ -159,7 +237,7 @@
             <a href="#" class="clien__inner-img">
               <img src="images/client/6.png" alt="">
             </a>
-            <a href="#"class="clien__inner-img">
+            <a href="#" class="clien__inner-img">
               <img src="images/client/7.png" alt="">
             </a>
             <a href="#" class="clien__inner-img">
@@ -181,58 +259,9 @@
         </div>
       </section>
 
-      <section class="faq-section">
-        <div class="container">
-          <h2 class="faq-section__title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
-          <p class="faq-section__text">У вас есть дополнительные вопросы?</p>
-          <div class="faq">
-            <div class="faq-item">
-              <input class="faq-input" type="checkbox" id="faq_1">
-              <label class="faq-title" for="faq_1">Что такое сертификация ISO? И сертифицирован ли Intellectsoft
-                ISO?</label>
-              <div class="faq-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
-                  ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-                  reprehenderit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum
-                  deleniti ut
-                  ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-                  reprehenderit!</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <input class="faq-input" type="checkbox" id="faq_2">
-              <label class="faq-title" for="faq_2">ККак выбрать компанию, предоставляющую услуги по разработке
-                программного обеспечения?</label>
-              <div class="faq-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
-                  ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-                  reprehenderit!</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <input class="faq-input" type="checkbox" id="faq_3">
-              <label class="faq-title" for="faq_3">Каковы самые большие преимущества аутсорсинга фирмы, предоставляющей
-                услуги по разработке программного обеспечения?</label>
-              <div class="faq-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
-                  ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-                  reprehenderit!</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <input class="faq-input" type="checkbox" id="faq_4">
-              <label class="faq-title" for="faq_4">Как снизить затраты на услуги по разработке программного
-                обеспечения?</label>
-              <div class="faq-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum, ipsum. Voluptatum deleniti ut
-                  ipsa blanditiis, modi facere distinctio impedit illum fugiat ex vel, quasi sit, explicabo veniam nemo
-                  reprehenderit!</p>
-              </div>
-            </div>
-          </div>
 
-        </div>
-      </section>
+
+
     </main>
 
 
@@ -301,10 +330,9 @@
 
   </div>
 
-  <script src="js/particles.js"></script>
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
-   <script src="js/app.js"></script>
 </body>
 
 </html>
