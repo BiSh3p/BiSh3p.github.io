@@ -52,7 +52,7 @@ var galleryThumbs = new Swiper('.mini-slide', {
   });
 
 var swiper = new Swiper('.contact-slider', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     autoplay: {
       delay: 5000,
     },
@@ -70,46 +70,42 @@ $(function () {
     });
 });
 
-new Swiper('.diplome__inner',{
+
+new Swiper('.team-wrap',{
   slidesPerView: 1,
-  autoplay: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-    }
-  },
-});
-new Swiper('.team-slide',{
-  slidesPerView: 1,
-  autoplay: true,
+  autoplay: false,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next2',
-    prevEl: '.swiper-button-prev2'
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
 },
 });
-new Swiper('.image-slaider',{
+
+$('.card-wrapper').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
+  
+});
+$('.card-wrapper2').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
+  
+});
+new Swiper('.new-slide-top',{
+  slidesToShow: 1,
   slidesPerView: 1,
+  autoplay: false,
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
   breakpoints: {
-   
-    700: {
+    710: {
       slidesPerView: 2,
-    },
-    // when window width is >= 640px
-    1022: {
-      slidesPerView: 3,
     }
   },
 });
@@ -119,3 +115,4 @@ var mixer = mixitup('.gallery__inner', {
       filter: '.new'
   }
 });
+
