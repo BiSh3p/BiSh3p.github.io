@@ -29,23 +29,24 @@ body{
     &-btn{
         display: inline-block;
         color: rgb(255, 255, 255);
-        border: 3px solid rgb(255, 255, 255);
-        @extend %title-font;
-        font-size: 17px;
-        font-weight: 700;   
-        padding: 10px 15px 9px;
+        max-height: 33px;
         transition: .5s;
-        &:hover{
-            background-color: #1476f2;
-            color: #fff;
-            border: 3px solid #1476f2;
+        border-left: 2px solid rgb(255, 255, 255);
+        padding-left: 10px;
+        border-radius: 2px;
+        margin-top: 5px;
+        transition: 0s;
+        &__img{
+            width: 30px;
+            transition: 0;
         }
     }
     &__logo-img{
         width: 190px;
-        margin-right: 20px;
+        margin-right: 40px;
     }
 }
+
 .menu{
     &__items{
         display: flex;
@@ -91,10 +92,62 @@ body{
             top: 77px;
     }
 }
+.earthnev{
+    margin-right: 10px;
+    &-img{
+        background-color: transparent;
+        border: none;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            .earthnev-block{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &__box{
+            width: 30px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+    }
+    &-block{
+        background-color: #fff;
+        position: absolute;
+        width: 50px;
+        height: 65px;
+        right: 0;
+        transition: .5s;
+        top: 40px;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 0 10px #46464677;
+    }
+    &-link{
+        color: black;
+        font-weight: 500;
+        padding: 5px;
+        display: inline-block;
+        transition: .4s;
+        &:hover{
+            color: #1476f2;
+        }
+    }
+}
+.header.sticky .earthnev-img__box{
+	filter: brightness(0);
+}
+.header.sticky-2 .earthnev-img__box{
+	filter: none;
+}
 .earth{
     position: relative;
     &-img{
-        width: 25px;
+        width: 45px;
+        height: 45px;
         align-items: center;
         margin: 12px 10px 0;
     }
@@ -233,8 +286,8 @@ body{
     }
 }
 .header.sticky .header-btn{
-    color: #000;
-    border: 3px solid #000;
+    filter: brightness(0);
+
 }
 .header.sticky .earth-btn{
     color: #000 ;
@@ -243,8 +296,8 @@ body{
     color: rgb(255, 255, 255) !important;
 }
 .header.sticky-2 .header-btn{
-    color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
+    filter: none;
+
 }
 .header.sticky-2 .drop-btn{
     color: rgb(255, 255, 255) !important;
@@ -262,6 +315,7 @@ body{
 	display: none !important;  
 	// filter: brightness(0);
 }
+
 .header.sticky .logo-1{
 	display: none;  
 }
@@ -479,14 +533,14 @@ body{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 55px  30px;
+        img{
+            display: inline-block;
+        }
     }
 }
-.new-card{
-    background-color: #fdfdfd !important;
-}
+
 .card{
     padding: 80px 0;
-    background-color: rgb(243, 243, 243);
     &__items{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -494,9 +548,11 @@ body{
     }
     &__item{
         background-color: #fff;
+        border: 1px solid #a1a1a1;
         padding: 5px;
         text-align-last: left;
         transition: .5s;
+        
         &:hover{
             background-color:#202020;
             color: #fff;
@@ -556,16 +612,16 @@ body{
         display: flex;
         justify-content: space-between;
         &__logo{
-            margin-bottom: 45px;
+            margin-bottom: 25px;
             img{
-                width: 300px;
+                width: 190px;
             }
         }
         &__social{
             display: flex;
             justify-content: space-between;
             img{
-                width: 65px;
+                width: 38px;
                 margin: 0 9px;
             }
         }
@@ -583,7 +639,7 @@ body{
         }
         &__link{
             color: rgb(255, 255, 255);
-            font-weight: 600;
+            font-weight: 500;
             margin-bottom: 20px;
             display: inline-block;
             transition: .4s;
@@ -597,12 +653,12 @@ body{
     }
     &-bold{
         font-weight: 700;
-        font-size: 19px !important; 
+        font-size: 16px !important; 
     }
     &-right{
         max-width: 300px;
         &__title{
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 600;
             color: white;
             margin-top: 10px;
@@ -610,12 +666,12 @@ body{
         }
         &__adress{
             color: white;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
         }
         &__link{
             color: white;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 500;
             margin-top: 23px;
             display: inline-block;
@@ -638,6 +694,7 @@ body{
         &__text{
             color: rgb(185, 185, 185);
             font-weight: 500;
+            font-size: 14px;
             padding-right: 10px;
             margin-right: 10px;
             border-right: 1px solid #6e6e6e;
@@ -645,6 +702,7 @@ body{
         &__link{
             color: white;
             font-weight: 500;
+            font-size: 14px;
         }
         &__icon{
             display: inline-block;
@@ -652,6 +710,7 @@ body{
         }
     }
 }
+
 
 .tabs{
     &__triggers{
@@ -687,7 +746,6 @@ body{
 }
 
 .project{
-    background-color: rgb(248, 246, 246);
     padding: 90px 0;
     &__title{
         text-align: center;
@@ -728,10 +786,13 @@ body{
     }
     &-slider{
         background-color: #fff;
+        border-top: 1px solid #dddcdc;
+        border-left: 1px solid #dddcdc;
+        border-right: 1px solid #dddcdc;
     }
     &-slider__content{
         display: flex;
-        border-bottom: 1px solid rgb(221, 220, 220);
+        border-bottom: 1px solid #dddcdc;
     }
     &-img{
         min-width: 670px;
@@ -751,6 +812,10 @@ body{
     }
 }
 .mini-slide{
+    border-bottom: 1px solid #dddcdc;
+    border-left: 1px solid #dddcdc;
+    border-right: 1px solid #dddcdc;
+    
     background-color: #fff;
     padding: 10px 0;
     &__item{
@@ -766,10 +831,7 @@ body{
 
 .contact-section{
     // padding: 50px 0;
-    // background-color: #1d63f8;
-    // background-image: url(../images/Space-Oddity-3.gif);
 
-    background-color: #eeecec;
     padding: 90px 0;
 }
 .contact-inner{
@@ -781,14 +843,14 @@ body{
 .contact-about{
     padding: 20px 10px;
     text-align: center;
-    color: rgb(27, 27, 27);
+    color: rgb(0, 0, 0);
     // color: rgb(0, 0, 0);
     max-width: 50%;
     &__title{
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 30px;
-        color: #646262;
+        color: #000000;
     }
     &__score{
         display: flex;
@@ -823,6 +885,7 @@ body{
         margin-bottom: 25px;
     }
 }
+
 
 .swiper-scrollbar-drag{
     background-color: rgb(12, 12, 12);
@@ -866,6 +929,7 @@ body{
 .form{
     background-color: #ffffff;
     // background-color: #1476f2;
+    border: 1px solid #dddcdc;
     padding: 30px;
     max-width: 350px;
     &-input{
@@ -884,7 +948,7 @@ body{
 }
 
 .contact-title{
-    color: #646262 !important;
+    color: #000000 !important;
 }
 .banner{
     background-image: url(../images/bg/3.jpg);
@@ -995,8 +1059,8 @@ body{
     padding: 30px 0 50px;
     max-width: 700px;
     margin: 0 auto;
-    color: #585858;
 }
+
 .faq-inner{
     display: flex;
     justify-content: space-between;
@@ -1123,7 +1187,6 @@ body{
     font-size: 14px;
 }
 .card{
-    background-color: #f7f7f7 !important;
     padding: 70px 0;    
     &__title{
         margin-bottom: 15px;
@@ -1683,13 +1746,12 @@ body{
         max-width: 900px;
         margin: 0 auto;
         margin-bottom: 20px;
-        color: #585858;
     }
     &__text{
         font-size: 18px;
-        color: #646262;
     }
 }
+
 .about-card{
     background-color: #f8f6f6;
     padding: 90px 0;
@@ -1770,7 +1832,6 @@ body{
     padding: 80px 0;
     // background-color: #263b80;
     // background-color: #1476f2;
-    background-color: #eeecec;
     color: rgb(0, 0, 0);
     &__title{
         text-align: center;
@@ -1798,6 +1859,28 @@ body{
     &__img{
         margin-right: 15px;
         width: 130px;
+    }
+}
+
+.new-top{
+    background-image: url(../images/bg/slide_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 680px;
+    &__title{
+        display: inline-block;
+        color: #fff;
+        font-size: 45px;
+        font-weight: 700;
+        margin-top: 230px;
+    }
+    &__text{
+        color: #fff;
+        margin-top: 20px;
+        max-width: 800px;
+        font-size: 24px;
     }
 }
 .bottom{
@@ -1843,12 +1926,11 @@ body{
 
 
 .one-card{
-    background-color: #f3f3f3;
     padding: 40px 0;
     &__title{
         text-align: center;
         font-weight: 700;
-        color: #959596;
+        color: #000000;
         margin-bottom: 20px;
     }
     &__inner{
@@ -1863,6 +1945,7 @@ body{
         background-color: #fff;
         display: inline-block;
         overflow: hidden;
+        border: 1px solid #a7a7a7;
         margin-bottom: 20px;
         margin: 5px;
         &:hover{
@@ -2078,13 +2161,11 @@ body{
     transition: all 1s;
 }
 .team-form{
-    background-color: #fdfdfd;
     padding: 30px 0;
     padding-bottom: 90px;
     &__img{
         width: 200px;
         display: inline-block;
-        opacity: 0.5;
         margin-bottom: 30px;
     }
     &__inner{
@@ -2093,18 +2174,17 @@ body{
         text-align: center;
     }
     &__title{
-        color: #8f8f8f;
         font-weight: 700;
         margin-bottom: 20px;
         @extend %title-font;
         font-size: 34px;
     }
     &__btn{
-        border: 1px solid #a1a1a1;
+        border: 1px solid #292929;
         padding: 15px 10px;
         display: inline-block;
         width: 300px;
-        color: #6e6e6e;
+        color: #000;
         padding-right: 30px;
         transition: all .5s;
         font-size: 24px;
@@ -2125,15 +2205,16 @@ body{
     }
 }
 
+
 .new-product{
     padding: 40px 0;
+    color: black !important;
     &__inner{
         padding: 20px 0px;
     }
     &__title{
         font-size: 28px;
         font-weight: 700;
-        color: #575757;
         margin-bottom: 20px;
         @extend %title-font;
     }
@@ -2173,13 +2254,11 @@ body{
             font-size: 25px;
             @extend %title-font;
             font-weight:700;
-            color: #4e4e4e;
         }
         &-text{
             margin-bottom: 15px;
             @extend %title-font;
             text-align: justify;
-            color: #575757;
 
         }
         &-inner{
@@ -2389,7 +2468,6 @@ background-color: #fff;
         @extend %title-font;
         font-size: 30px;
         font-weight: 700;
-        color: #4e4e4e;
         position: relative;
         margin-bottom: 25px;
         padding-bottom: 25px;
@@ -2410,10 +2488,9 @@ background-color: #fff;
         @extend %title-font;
         font-size: 19px;
         line-height: 29px;
-        color: #5a5a5a;
     }
     &__left{
-        background-color: rgb(0, 255, 76);
+        background-color: rgb(133, 133, 133);
         display: block;
         max-width: 330px;
         text-align: center;
@@ -2563,7 +2640,6 @@ background-color: #fff;
         font-size: 40px;
         @extend %title-font;
         font-weight: 700;
-        color: #646262;
         display: block;
         border-bottom: 1px solid #959596;
     }
@@ -2625,14 +2701,13 @@ background-color: #fff;
         font-size: 25px;
         margin-bottom: 90px;
         font-weight: 700;
-        color: #585858;text-align: center;
+        text-align: center;
     }
     &__left-title{
         max-width: 370px;
         font-size: 30px;
         @extend %title-font;
         font-weight: 700;
-        color: #5a5a5a;
         position: relative;
         padding-bottom: 30px;
         &::after{
@@ -2642,7 +2717,7 @@ background-color: #fff;
             width: 150px;
             bottom: 0;
             left: 0;
-            background-color: #da0606;
+            background-color: #464646;
         }
     }
     &__right{
@@ -2661,7 +2736,6 @@ background-color: #fff;
         &-img{
             width: 20px;
             margin-right: 10px;
-            opacity: 0.8;
             align-items: center;
             display: block;
             margin-bottom: 20px;
@@ -2669,12 +2743,10 @@ background-color: #fff;
         &-title{
             @extend %title-font;
             font-weight: 500;
-            color: #575757;
             margin-bottom: 20px;
         }
         &-text{
             font-size: 13px;
-            color: #646262;
             width: 200px;
         }
     }
@@ -2687,9 +2759,9 @@ background-color: #fff;
 .team-form__btn-custom{
     font-size: 18px;
 }
+
 .review{
     padding: 90px 0 140px;
-    background-color: #f7f7f7;
         @extend %title-font;
         text-align: center;
     &-img{
@@ -2705,7 +2777,6 @@ background-color: #fff;
         @extend %title-font;
         font-size: 18px;
         font-weight: 600;
-        color: #575757;
     }
     &-cov{
         display: inline-block;
@@ -2720,7 +2791,6 @@ background-color: #fff;
     &-text{
         font-size: 20px;
         font-family:Arial, Helvetica, sans-serif;
-        color: #5a5a5a;
         padding: 0 70px 20px;
         & + .review-text{
             padding-bottom: 50px;
@@ -2771,6 +2841,7 @@ background-color: #fff;
         margin: 0 auto 30px;
     }
 }
+
 .collection{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -2778,7 +2849,7 @@ background-color: #fff;
     padding-bottom: 70px;
     &__item{
         position: relative;
-        color: rgb(100, 100, 100);
+        color: rgb(0, 0, 0);
         &:hover{
             .collection__info{
                 opacity: 1;
@@ -2825,11 +2896,12 @@ background-color: #fff;
     }
     &__info-text{
         font-size: 14px;
-        color: #707070;
+        color: #000000;
         @extend %title-font;
         font-weight: 600;
     }
 }
+
 .resume__header{
     &-inner{
         display: flex;

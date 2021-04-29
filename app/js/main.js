@@ -98,9 +98,9 @@ var swiper = new Swiper('.contact-slider', {
 
   $(function () {
 
-    $('.earth-btn').on('click', function(){
-        $('.earth-inner').toggleClass('earth-active');
-    });
+    // $('.earth-btn').on('click', function(){
+    //     $('.earth-inner').toggleClass('earth-active');
+    // });
 });
 
 // $(function () {
@@ -153,11 +153,8 @@ $('.card-wrapper2').slick({
 new Swiper('.new-slide-top',{
   slidesToShow: 1,
   slidesPerView: 1,
-  autoplay: false,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+  autoplay: true,
+ 
   breakpoints: {
     710: {
       slidesPerView: 2,
