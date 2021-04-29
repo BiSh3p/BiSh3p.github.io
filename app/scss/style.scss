@@ -135,7 +135,18 @@ body{
     }
 }
 
-
+.nav-left{
+    padding-left: 40px;
+    margin-left: 195px;
+}
+.nav-center{
+    padding-left: 40px;
+    margin-left: 295px;
+}
+.nav-right{
+    padding-left: 40px;
+    margin-left: 395px;
+}
 .drop{
     visibility: hidden;
     transition: all .1s;
@@ -150,11 +161,12 @@ body{
     z-index: 888;
     &-flex{
         display: flex;
+        justify-content: space-between;
     }
     &-left{
         border-right: 1px solid #e7e7e7;
         height: 380px;
-        max-width: 380px;
+        max-width: 745px;
         width: 100%;
     }
     &-link{
