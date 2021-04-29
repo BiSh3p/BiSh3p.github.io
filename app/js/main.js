@@ -1,10 +1,4 @@
-new Swiper('.slider-box',{
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
@@ -19,13 +13,44 @@ $(document).ready(function(){
     });
     $('.tabs__triggers-item:first').click();
 });
-$('.menu__list-link').hover(function(){
-	$('.header').addClass('sticky');
-});
-$('.menu__sab-list').hover(function(){
-	$('.header').addClass('sticky');
+$('.menu__item-link').hover(function(){
+	$('.header').addClass('sticky-2');
 }, function() {
-	$('.header').removeClass('sticky');
+	$('.header').removeClass('sticky-2');
+});
+$('.drop').hover(function(){
+	$('.header').addClass('sticky-2');
+}, function() {
+	$('.header').removeClass('sticky-2');
+});
+
+
+$(function () {
+
+  $('.bot-bottom').on('click', function(){
+      $('.bot-img').addClass('bot-close');
+  });
+  $('.bot-bottom').on('click', function(){
+      $('.bot-inner').removeClass('bot-close');
+  });
+  $('.bot-close1').on('click', function(){
+    $('.bot-img').removeClass('bot-close');
+});
+  $('.bot-close1').on('click', function(){
+    $('.bot-inner').addClass('bot-close');
+});
+});
+$(function () {
+
+  $('.message-bottom').on('click', function(){
+      $('.message-form').toggleClass('bot-close');
+  });
+});
+
+var swiper = new Swiper('.main-swiper', {
+  slidesPerView: 1,
+  autoplay: true,
+  loop: true
 });
 var galleryThumbs = new Swiper('.mini-slide', {
     spaceBetween: 10,
@@ -59,16 +84,22 @@ var swiper = new Swiper('.contact-slider', {
     scrollbar: { el: '.swiper-scrollbar' },
   });
 
+  $(function () {
 
-$(function () {
-
-    $('.rightside-menu').on('click', function(){
-        $('.menu__list').addClass('menu-active');
-    });
-    $('.rightside-close').on('click', function(){
-        $('.menu__list').removeClass('menu-active');
+    $('.earth-btn').on('click', function(){
+        $('.earth-inner').toggleClass('earth-active');
     });
 });
+
+// $(function () {
+
+//     $('.rightside-menu').on('click', function(){
+//         $('.menu__list').addClass('menu-active');
+//     });
+//     $('.rightside-close').on('click', function(){
+//         $('.menu__list').removeClass('menu-active');
+//     });
+// });
 
 
 new Swiper('.team-wrap',{

@@ -33,14 +33,20 @@ canvas{
   height: 100%;
 }
 
+#particles-js-2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+  }
 
 /*черно-белые картинки партнёров*/
-.clien__inner-img {
+/* .clien__inner-img {
 	filter: grayscale(100%);
 }
 .clien__inner-img:hover {
 	filter: none;
-}
+} */
 
 /*черно-белые картинки карусель*/
 .mini-slide__img {
