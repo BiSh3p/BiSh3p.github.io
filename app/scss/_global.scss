@@ -5,6 +5,11 @@ body {
 	font-size: 14px;
 	position: relative;
 }
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
 
 .wrapper {
 	display: flex;

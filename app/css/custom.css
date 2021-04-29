@@ -49,12 +49,12 @@ canvas{
 } */
 
 /*черно-белые картинки карусель*/
-.mini-slide__img {
+/* .mini-slide__img {
 	filter: grayscale(100%);
 }
 .mini-slide__img:hover {
 	filter: none;
-}
+} */
 
 /*ГОТОВЫ НАЧАТЬ С НАМИ ПРОЕКТ?*/
 
