@@ -102,6 +102,12 @@ body{
         border: none;
         background-color: transparent;
         cursor: pointer;
+        color: white;
+        font-weight: 700;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     &-active{
         display: block !important;
@@ -112,16 +118,17 @@ body{
         border-radius: 3px;
         position: absolute;
         width: 90px;
-        right: 15px;
+        right: 10px;
         z-index: 889;
-        top: 50px;
+        top: 40px;
+        text-align: center;
         display: none;
         box-shadow: 0 0 10px rgb(110, 97, 97);
     }
     &-item{
-        display: flex;
+        // display: flex;
         align-items: center;
-        color: black;
+        color: rgb(0, 0, 0);
     }
     &-lengugas{
         width: 25px;
@@ -129,6 +136,8 @@ body{
     &-text{
         font-weight: 500;
         padding-left: 5px;
+        display: inline-block;
+        text-align: center;
     }
     &-item + .earth-item{
         margin-top: 10px;
@@ -227,6 +236,12 @@ body{
     color: #000;
     border: 3px solid #000;
 }
+.header.sticky .earth-btn{
+    color: #000 ;
+}
+.header.sticky-2 .earth-btn{
+    color: rgb(255, 255, 255) !important;
+}
 .header.sticky-2 .header-btn{
     color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
@@ -239,6 +254,13 @@ body{
 }
 .logo-1{
     display: block;
+}
+.header.sticky-2 .logo-1{
+	display: block !important;  
+}
+.header.sticky-2 .logo-2{
+	display: none !important;  
+	// filter: brightness(0);
 }
 .header.sticky .logo-1{
 	display: none;  
@@ -265,10 +287,28 @@ body{
 }
 
 .main-top{
-    height: 650px;
+    height: 650px !important;
     color: #fff;
     @extend %title-font;
     overflow-x: hidden;
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        color: #fff;
+    }
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        color: #fff;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 50px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+        background-color: #ffffff;
+        
+        border-radius: 0;
+    }
+}
+
+.main-swiper{
+    min-height: 650px;
 }
 .main-bg{
     background-position: center;
@@ -295,6 +335,7 @@ body{
     border: 2px solid #fff;
     transition: .5s;
     font-weight: 600;
+    margin-bottom: 190px;
     &:hover{
         background-color: #fff;
         color: black;
@@ -561,21 +602,21 @@ body{
     &-right{
         max-width: 300px;
         &__title{
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 600;
             color: white;
             margin-top: 10px;
             margin-bottom: 20px;
         }
         &__adress{
             color: white;
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
         }
         &__link{
             color: white;
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 500;
             margin-top: 23px;
             display: inline-block;
         }
@@ -699,6 +740,14 @@ body{
             height: 420px;
             width: 670px;
         }
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        color: rgb(161, 161, 161);
+        right: -20px;
+    }
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        color: rgb(161, 160, 160);
+        left: -20px;
     }
 }
 .mini-slide{

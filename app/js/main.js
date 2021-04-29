@@ -50,7 +50,15 @@ $(function () {
 var swiper = new Swiper('.main-swiper', {
   slidesPerView: 1,
   autoplay: true,
-  loop: true
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+},
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
 });
 var galleryThumbs = new Swiper('.mini-slide', {
     spaceBetween: 10,
@@ -70,6 +78,10 @@ var galleryThumbs = new Swiper('.mini-slide', {
     autoplay: {
       delay: 5000,
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+  },
     loopedSlides: 5, //looped slides should be the same
     thumbs: {
       swiper: galleryThumbs,
