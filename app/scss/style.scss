@@ -444,6 +444,12 @@ body{
         width: 39px;
     }
 }
+.message-btn__link-btn:hover{
+    
+    .message-btn__modal{
+        opacity: 1;
+    }
+}
 .message{
 
     @extend %title-font;
@@ -521,14 +527,29 @@ body{
             text-align: center;
             height: 20px;
         }
+        &__modal{
+            position: absolute;
+            top: -30px;
+            font-size: 12px;
+            opacity: 0;
+            padding: 5px;
+            color: rgb(87, 87, 87);
+            background-color: rgb(221, 221, 221);
+            z-index: 999;
+        }
         &__link{
             display: inline-block;
             padding: 10px 30px 7px;
             margin: 0 5px;
             border-radius: 3px;
             transition: .5s;
+            position: relative;
             &:hover{
                 opacity: 0.7;
+                .message-btn__modal{
+                    opacity: 1;
+                }
+                
             }
             &-btn{
                 border: none;
@@ -3346,6 +3367,26 @@ background-color: #fff;
         &__checkbox-block{
             border-radius: 10px;
         }
+    }
+}
+.mini-slide__img img {
+    height: 85px;
+    width: 265px;
+    object-fit: contain;
+}
+.tecnology{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item{
+        background-color: #512bd4;
+        margin: 10px;
+        padding: 28px;
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
     }
 }
 
