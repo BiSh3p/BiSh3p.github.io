@@ -39,6 +39,17 @@ $(function () {
   $('.bot-close1').on('click', function(){
     $('.bot-inner').addClass('bot-close');
 });
+
+$('.message-btn__link-btn').on('click', function(){
+  $('.message-btn__form').toggleClass('message-bottom__script');
+});
+
+$('.message-btn__link-btn').on('click', function(){
+  $('.message-form__content').toggleClass('message-none');
+});
+$('.message-btn__link-btn').on('click', function(){
+$('.message-btn').toggleClass('message-btn__top');
+});
 });
 $(function () {
 
@@ -104,15 +115,25 @@ var swiper = new Swiper('.contact-slider', {
 });
 
 // $(function () {
-
-//     $('.rightside-menu').on('click', function(){
-//         $('.menu__list').addClass('menu-active');
-//     });
-//     $('.rightside-close').on('click', function(){
-//         $('.menu__list').removeClass('menu-active');
-//     });
+//   $('.message-btn__link-btn').on('click', function(){
+//       $('.message-btn__form').toggle('message-none');
+//   });
+//   $('.message-btn__link-btn').on('click', function(){
+//       $('.message-form__content').addClass('message-none');
+//   });
+//   $('.message-btn__link-btn').on('click', function(){
+//     $('.message-btn').toggleClass('message-btn__top');
 // });
+// });
+$(function () {
 
+    $('.menu-close').on('click', function(){
+        $('.menu').addClass('none');
+    });
+    $('.menu-burger').on('click', function(){
+        $('.menu').removeClass('none');
+    });
+});
 
 new Swiper('.team-wrap',{
   slidesPerView: 1,
